@@ -1,0 +1,52 @@
+---
+R1:
+  host: 192.168.8.125
+  auth_username: cisco
+  auth_password: cisco1
+  auth_secondary: cisco2
+  auth_strict_key: false
+  ssh_config_file: ssh_config
+  transport_options:
+    open_cmd:
+    - "-c"
+    - aes256-cbc
+  commands:
+  - show version
+  - show startup-config
+  - show running-config
+  - show access-lists
+  - show interface stats
+R2:
+  host: 192.168.8.206
+  auth_username: cisco
+  auth_password: cisco1
+  auth_secondary: cisco2
+  auth_strict_key: false
+  ssh_config_file: ssh_config
+  transport_options:
+    open_cmd:
+    - "-c"
+    - aes256-cbc
+  commands:
+  - show version
+  - show startup-config
+  - show running-config
+  - show access-lists
+  - show interface stats
+R3:
+  host: 192.168.8.229
+  auth_username: cisco
+  auth_password: cisco1
+  auth_secondary: cisco2
+  auth_strict_key: false
+  ssh_config_file: ssh_config
+  transport_options:
+    open_cmd:
+    - "-c"
+    - aes256-cbc
+  commands:
+  - show version
+  - show startup-config
+  - show running-config
+  - show access-lists
+  - show interface stats
